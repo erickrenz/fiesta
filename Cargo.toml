@@ -1,0 +1,22 @@
+[package]
+name = "fiesta"
+version = "0.1.0"
+edition = "2021"
+authors = ["Eric Krenz"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/gohtmx/fiesta"
+homepage = "https://github.com/gohtmx/fiesta"
+documentation = "https://docs.rs/fiesta/"
+keywords = ["htmx", "tailwind", "cli", "web", "async"]
+categories = ["command-line-utilities", "development-tools", "web-programming", "asynchronous", "api-bindings"]
+description = """
+fiesta - a simple binary for creating new projects with rust, htmx, tailwindcss, actix, and sqlx
+"""
+
+[dependencies]
+color-eyre = "0.6.2"
+clap = { version = "4.4.3", features = ["derive"] }
+reqwest = "0.11.20"
+tokio = { version = "1.32.0", features = ["full"] }
+dirs = "5.0.1"
